@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_margin="10sp"
+        android:background="@drawable/appointment_card_layout"
+        android:orientation="vertical"
+        android:padding="5sp">
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/text_card_layout"
+            android:padding="10sp"
+            android:text="Enter Username"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/text_card_layout"
+            android:padding="10sp"
+            android:text="Enter Name"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/btn_block_unblock"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0sp"
+                android:layout_weight="0.3"
+                android:background="@color/white"
+                android:checked="false"
+                android:textColor="@color/black"
+                android:textOff="Block"
+                android:textOn="Unblock"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="0sp"
+                android:layout_height="55sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="-3sp"
+                android:layout_weight="0.3"
+                android:backgroundTint="@color/white"
+                android:padding="10sp"
+                android:text="Delete"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
